@@ -15,6 +15,7 @@ let alienShip = {
 
 alienShip.retreat();
 alienShip.takeOff();
+console.log('')
 
 
 // Nested Objects
@@ -54,3 +55,27 @@ let spaceship = {
 let capFave = spaceship.crew.captain['favorite foods'][0];
 
 let firstPassenger = spaceship.passengers[0];
+
+console.log('')
+
+
+// Passed by reference examples
+
+let spaceship2 = {
+  'Fuel Type' : 'Turbo Fuel',
+  homePlanet : 'Earth'
+};
+
+// Write your code below
+
+let greenEnergy = obj => {
+  obj['Fuel Type'] = 'avocado oil';
+}
+
+let remotelyDisable = obj => {
+  obj.disabled = true;
+}
+
+greenEnergy(spaceship2);
+remotelyDisable(spaceship2);
+console.log(spaceship2);
