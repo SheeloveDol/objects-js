@@ -35,3 +35,28 @@ const robot = {
 
 const { functionality } = robot;
 functionality.beep();
+console.log('');
+
+
+// Using built-in object methods
+
+const robot2 = {
+	model: 'SAL-1000',
+  mobile: true,
+  sentient: false,
+  armor: 'Steel-plated',
+  energyLevel: 75
+};
+
+// What is missing in the following method call?
+const robotKeys = Object.keys(robot2);
+console.log(robotKeys);
+
+// Declare robotEntries below this line:
+
+const robotEntries = Object.entries(robot2)
+console.log(robotEntries);
+
+// Declare newRobot below this line:
+const newRobot = Object.assign({laserBlaster: true, voiceRecognition: true}, robot2);
+console.log(newRobot);
