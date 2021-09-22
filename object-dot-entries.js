@@ -53,4 +53,22 @@ for (let [key, value] of Object.entries(transportation.motorcycles)) {
   emptyTransport.push(`${key}: ${value}`);
 }
 
-console.log(emptyTransport)
+console.log(emptyTransport);
+
+//******************* */ Line Skip
+console.log('');
+
+
+// Object with many things
+
+const weird = {
+  jobs: ['job1', 'job2', 'job3'],
+  employees: ['employee1', 'employee2', 'employee3']
+}
+
+let weirdArr = []
+console.log(weird.jobs)
+for (let [key, value] of Object.entries(weird)) {
+  weirdArr.push(`${key}: ${value}`);
+}
+console.log(weirdArr)

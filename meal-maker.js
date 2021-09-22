@@ -4,17 +4,14 @@ const menu = {
     mains: [],
     desserts: []
   },
-
   get courses() {
     for (const [key, value] of Object.entries(menu._courses)) {
       return `${key}: ${value}`;
     }
   },
-
   get appetizers() {
 
   },
-
   set appetizers(appetizersIn) {
 
   },
@@ -22,7 +19,6 @@ const menu = {
   get mains() {
 
   },
-  
   set mains(mainsIn) {
 
   },
@@ -35,7 +31,9 @@ const menu = {
   },
 
   addDishToCourse(courseName, dishName, dishPrice) {
-
+    let dishes = _courses.courseName;
+    let random = Math.floor(Math.random() * dishes.length);
+    return dishes[random];
   }
 
 }
